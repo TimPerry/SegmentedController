@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="SegmentedController.css"/>
+    </head>
+    <body>
+        <div id="content"></div>
+        <script src="SegmentedController.js"></script>
+        <script>
+            var segmentedController = new SegmentedController('numericController', [
+                {
+                    label: "One",
+                    value: "off"
+                },
+                {
+                    label: "Two",
+                    value: "off"
+                },
+                {
+                    label: "Three",
+                    value: "off"
+                },
+                {
+                    label: "Four",
+                    value: "off"
+                }
+            ]);
+            segmentedController.renderIn(document.getElementById('content'));
+
+            var segmentedController2 = new SegmentedController('pheneticsController', [
+                {
+                    label: "Alpha",
+                    value: "off"
+                },
+                {
+                    label: "Beta",
+                    value: "off"
+                },
+                {
+                    label: "Charlie",
+                    value: "off"
+                },
+                {
+                    label: "Delta",
+                    value: "off"
+                }
+            ]);
+            segmentedController2.renderIn(document.getElementById('content'));
+        </script>
+    </body>
+</html>

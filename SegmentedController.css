@@ -1,0 +1,29 @@
+.segmented-controller {
+    display: block;
+    position: relative;
+    list-style-type: none;
+    padding: 0;
+    margin: 8px;
+}
+
+.segmented-controller__option {
+    display: inline-block;
+}
+
+.segmented-controller__option-link {
+    display: block;
+    background-color: #eee;
+    color: #999;
+    padding: 6px 8px;
+    font-family: "Helvetica Neue", Helvetica, Verdana, Arial, sans-serif;
+    border-right: 1px solid #5d5d5d;
+}
+
+.segmented-controller__option:last-of-type .segmented-controller__option-link {
+    border-right: 0;
+}
+
+.segmented-controller__option-link.is-current {
+    background-color: #3d3d3d;
+    color: #eeeeee;
+}
